@@ -1,4 +1,4 @@
-# Simple Simultaneous Ensemble Learning Genetic Programming
+# Simple Simultaneous Ensemble learning Genetic Programming (2SEGP)
 Python 3 code for 2SEGP
 
 ## Installation

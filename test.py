@@ -2,8 +2,6 @@
 import numpy as np
 import sklearn.datasets
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import scale
-from copy import deepcopy
 
 
 # Internal imports
@@ -17,9 +15,6 @@ np.random.seed(42)
 
 # Load regression dataset 
 X, y = sklearn.datasets.load_boston( return_X_y=True ) #sklearn.datasets.load_diabetes(return_X_y=True) #
-y_std = np.std(y)
-X = scale(X)
-y = scale(y)
 
 # Take a dataset split
 X_train, X_test, y_train, y_test = train_test_split( X, y, test_size=0.5, random_state=42 )
@@ -34,5 +29,5 @@ gp = SSEGPRegEst(pop_size=pop_size, ensemble_size=ensemble_size, max_generations
 
 gp.fit(X_train,y_train)
 
-print('Train RMSE:',  y_std * np.sqrt( np.mean(np.square(y_train - gp.predict(X_train)))) )
-print('Test RMSE:', y_std * np.sqrt( np.mean(np.square(y_test - gp.predict(X_test)))) )
+print('Train RMSE:', np.sqrt( np.mean(np.square(y_train - gp.predict(X_train)))) )
+print('Test RMSE:', np.sqrt( np.mean(np.square(y_test - gp.predict(X_test)))) )

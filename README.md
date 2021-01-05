@@ -2,8 +2,8 @@
 Python 3 code for 2SEGP, which was proposed in:
 
 ```
-Virgolin, Marco. "Simple Simultaneous Ensemble Learning in Genetic Programming." arXiv preprint arXiv:2009.06037 (2020).
-https://arxiv.org/abs/2009.06037
+Virgolin, Marco. "Genetic Programming is Naturally Suited to Evolve Bagging Ensembles." arXiv preprint arXiv:2009.06037v4 (2020).
+https://arxiv.org/abs/2009.06037v4
 ```
 
 ## Installation

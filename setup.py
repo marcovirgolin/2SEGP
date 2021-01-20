@@ -14,7 +14,7 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     setup_requires=['wheel'],
     install_requires=[
-    	'numpy >= 1.16.1','scikit-learn >= 0.20.0','simplegp >= 0.9.5'
+    	'numpy >= 1.16.1','scikit-learn >= 0.20.0','simplegp >= 0.9.9'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

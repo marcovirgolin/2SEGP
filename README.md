@@ -10,4 +10,4 @@ https://arxiv.org/abs/2009.06037v4
 Run `pip install .` from inside this folder.
 
 ## Requirements
-Requires `numpy >= 1.16.1`, `scikit-learn >= 0.20.0`, `simplegp >= 0.9.5`.
+Requires `numpy >= 1.16.1`, `scikit-learn >= 0.20.0`, `simplegp >= 0.9.9`.

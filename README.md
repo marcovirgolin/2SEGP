@@ -2,7 +2,7 @@
 Python 3 code for 2SEGP, which was proposed in:
 
 ```
-Virgolin, Marco. "Genetic Programming is Naturally Suited to Evolve Bagging Ensembles." arXiv preprint arXiv:2009.06037v4 (2020).
+Virgolin, Marco. "Genetic Programming is Naturally Suited to Evolve Bagging Ensembles." arXiv preprint arXiv:2009.06037v4 (2021).
 https://arxiv.org/abs/2009.06037v4
 ```
 

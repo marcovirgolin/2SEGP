@@ -23,6 +23,7 @@ Nice aspects of 2SEGP are that:
 - it has only 1 additional hyper-parameter compared to classic GP (ensemble size) and it is rather robust to different choices
 - it runs almost as fast as classic GP (see Big-O's in the paper)
 - despite being simpler than other existing approaches, it typically performs equal or better than them 
+- main ideas are portable to other evolution-based algorithms (e.g., neural architecture search)
 
 
 ## Installation

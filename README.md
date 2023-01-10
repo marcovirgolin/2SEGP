@@ -1,5 +1,6 @@
 # Simple Simultaneous Ensemble Genetic Programming (2SEGP)
-Python 3 code for 2SEGP, which was proposed in:
+
+Python code for 2SEGP, which was proposed in:
 
 ```
 @inbook{virgolin2021genetic,
@@ -15,6 +16,14 @@ Python 3 code for 2SEGP, which was proposed in:
   numpages = {10}
 }
 ```
+
+Differently from classic evolution which returns a single model, 2SEGP returns an ensemble.
+Nice aspects of 2SEGP are that:
+- it is a very simple modification of classic GP 
+- it has only 1 additional hyper-parameter compared to classic GP (ensemble size) and it is rather robust to different choices
+- it runs almost as fast as classic GP (see Big-O's in the paper)
+- despite being simpler than other existing approaches, it typically performs equal or better than them 
+
 
 ## Installation
 Run `pip install .` from inside this folder.

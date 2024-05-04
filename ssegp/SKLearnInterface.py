@@ -86,10 +86,12 @@ class SSEGPRegressionEstimator(BaseEstimator, RegressorMixin):
 		if self.error_metric == 'binary_acc':
 			predictions[predictions > .5] = 1.0
 			predictions[predictions <= .5] = 0.0
-			prediction = mode(predictions)[0][0]
+			prediction = mode(predictions)[0].squeeze()
 		else:
 			prediction = np.mean(predictions, axis=0)
-
+   
+		assert len(prediction) == len(X)
+   
 		return prediction
 
 	def score(self, X, y=None):
